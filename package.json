@@ -1,0 +1,17 @@
+{
+  "name": "bootstrapproje",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "nodesassmin": "node-sass -w scss/ -o css/ -r --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.1",
+    "mdb-ui-kit": "^6.4.2",
+    "node-sass": "^9.0.0"
+  }
+}
