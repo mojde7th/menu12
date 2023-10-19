@@ -1,7 +1,14 @@
-div.menu {
-  width: 100%;
-  height: 40px;
-  background-color: #2b2b2b;
+@font-face {
+  font-family: "applef";
+  src: url(../fonts/sf-pro-icons_light.woff2);
 }
-a.nav-link::after{display: none;}
- 
+
+nav a {
+  color: white !important;
+  font-size: 12px !important;
+  font-family: applef;
+}
+nav i {
+  color: white !important;
+  
+}
