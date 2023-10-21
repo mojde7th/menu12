@@ -10,5 +10,12 @@ nav a {
 }
 nav i {
   color: white !important;
-  
+}
+@media screen and (max-with: 998px) {
+  .navbar-toggler {
+    height: 200px !important;
+    width: 90px !important;
+    background-color: aqua;
+    display: block;
+  }
 }

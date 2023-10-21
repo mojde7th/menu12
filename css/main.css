@@ -1,1 +1,1 @@
-@font-face{font-family:"applef";src:url(../fonts/sf-pro-icons_light.woff2)}nav a{color:white !important;font-size:12px !important;font-family:applef}nav i{color:white !important}
+@font-face{font-family:"applef";src:url(../fonts/sf-pro-icons_light.woff2)}nav a{color:white !important;font-size:12px !important;font-family:applef}nav i{color:white !important}@media screen and (max-with: 998px){.navbar-toggler{height:200px !important;width:90px !important;background-color:aqua;display:block}}
