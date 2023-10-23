@@ -11,11 +11,54 @@ nav a {
 nav i {
   color: white !important;
 }
-@media screen and (max-with: 998px) {
-  .navbar-toggler {
+@media screen and (min-width: 1400px) {
+  // xxl
+}
+@media screen and (min-width: 1200px) and(max-width:1400px) {
+  //xl
+}
+@media screen and (min-width: 992px) and(max-width:1200px) {
+  //lg
+}
+@media screen and (min-width: 768px) and(max-width:992px) {
+  //md
+}
+@media screen and (min-width: 576px) and(max-width:768px) {
+  //sm
+}
+@media screen and (max-width: 576px) {
+  //xs
+}
+a.nav-link {
+  overflow: visible;
+}
+@media screen and (min-width: 992px) {
+  .navbar {
+    z-index: 4 !important;
+  }
+
+  ul > li {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+  }
+  li > div {
+    top: -300% !important;
+    left: 0 !important;
+    z-index: -10 !important;
+    transition: 0.5s ease-in-out 0.6s;
+    background-color: #2b2b2b;
     height: 200px !important;
-    width: 90px !important;
-    background-color: aqua;
-    display: block;
+    color: white;
+  }
+
+  li:hover > div {
+    top: 40px !important;
+    transition: 0.6s ease-in-out 0.07s;
+  }
+
+  li.nav-item {
+    width: calc(100% / 12);
+    text-align: center;
   }
 }
