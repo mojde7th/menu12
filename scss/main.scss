@@ -43,22 +43,40 @@ a.nav-link {
     padding: 0;
   }
   li > div {
-    top: -300% !important;
+    top: -205px !important;
     left: 0 !important;
-    z-index: -10 !important;
-    transition: 0.5s ease-in-out 0.6s;
+    z-index: -6 !important;
+    transition: 0.003s ease-in-out;
     background-color: #2b2b2b;
     height: 200px !important;
     color: white;
   }
 
   li:hover > div {
-    top: 40px !important;
-    transition: 0.6s ease-in-out 0.07s;
+    top: 30px !important;
+    transition: 0.003s ease-in-out 0.5s;
   }
 
   li.nav-item {
     width: calc(100% / 12);
     text-align: center;
+  }
+  li > div li {
+    z-index: -20;
+  }
+  .outerdiv {
+    top: -300px;
+    height: 200px;
+    width: 100vw !important;
+    position: absolute;
+
+    z-index: -40 !important;
+    left: 0 !important;
+    transform: translateX(-12.5%);
+    transition: 1s 0.7s;
+  }
+  li:hover + div.outerdiv {
+    transition: 0.43s 0s;
+    top: 30px;
   }
 }
