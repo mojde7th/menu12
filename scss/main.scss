@@ -29,12 +29,11 @@ nav i {
 @media screen and (max-width: 576px) {
   //xs
 }
-a.nav-link {
-  overflow: visible;
-}
+
 @media screen and (min-width: 992px) {
   .navbar {
     z-index: 4 !important;
+    height: 50px !important;
   }
 
   ul > li {
