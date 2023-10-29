@@ -16,7 +16,8 @@
 
     <div class="row bg-dark m-0 ">
 
-        <nav class="navbar  navbar-expand-lg navbar-light p-0">
+        <nav class=" navbar  navbar-expand-lg navbar-light p-0 position-fixed"
+            style="background-color: #2b2b2b !important;">
 
             <div class="container-fluid  position-relative w-100 p-0 h-100 gap-4 align-items-center">
 
@@ -442,36 +443,60 @@
 
                 </div>
 
-                <a href="#" class="dropdown-toggle   dropdown collapse position-absolute ms-5  h-100"
-                    data-mdb-toggle="dropdown" id="navbarSupportedContent2"
-                    style="line-height: 30px; font-size: 16px !important;">
-                    Support
+                <div href="#" class="ulsupport ms-4 w-100  collapse position-absolute   h-100"
+                    id="navbarSupportedContent2">
+                    <ul class="list-unstyled d-flex gap-4 ms-5">
+                        <li class=""> <a style="line-height: 50px; font-size: 16px !important; z-index: 10;"
+                                href="#">iPad</a></li>
+                        <li class=""> <a style="line-height: 50px; font-size: 16px !important; z-index: 10;"
+                                href="#">iphone</a></li>
+                        <li class="support" data-mdb-toggle="dropdown"> <a class=" dropdown-toggle  dropdown " href="#"
+                                style="line-height: 50px; font-size: 16px !important; z-index: 10;">Support</a></li>
 
-                </a>
+                        <div class="supportdiv dropdown-menu  w-50  position-absolute  bg-light  "
+                            style="margin-left: -200px !important;">
+                            <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iste porro ab
+                                architecto natus,
+                                temp
+                                fugiat veritatis
+                                adipisci.</p>
+                        </div>
+
+                    </ul>
 
 
-
-                <div class="dropdown-menu w-75  bg-light position-absolute start-50 translate-middle-x">
-                    <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iste porro ab
-                        architecto natus,
-                        temporibus facere
-                        sequi iure explicabo pariatur libero suscipit, recusandae minima voluptatem repudiandae, tempore
-                        fugiat veritatis
-                        adipisci.</p>
                 </div>
+
+
+
 
             </div>
 
 
 
         </nav>
-
+        <div class="position-absolute w-100 h-100 img-fluid "
+            style="background-image: url(./images/gamewar2.jpg); top: 50px; background-repeat: no-repeat;background-size: cover;">
+        </div>
+        <div class="backdrop"></div>
     </div>
 
 
 
 
     <script src="./mdb.min.js"></script>
+    <script>
+        const sup = document.querySelector("li.support");
+        const ulsup = document.querySelector("div.ulsupport");
+        const supportdiv = document.querySelector("div.supportdiv");
+        const nav = document.querySelector("body");
+        sup.addEventListener("click", function () {
+            document.querySelector(".backdrop").style.display = "block";
+        })
+        ulsup.addEventListener("click", function () {
+            if (!supportdiv.classList.contains('show')) { document.querySelector(".backdrop").style.display = "none"; }
+        })
+    </script>
 </body>
 
 </html>
