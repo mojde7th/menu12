@@ -110,3 +110,9 @@ nav i {
   z-index: 4 !important;
   height: 50px !important;
 }
+
+.dropdown-menu {
+  left: calc(50% - 48px) !important;
+top: calc(50px) !important;
+  transform: translateX(-50%) !important;
+}
