@@ -501,10 +501,14 @@
         const supportdiv = document.querySelector("div.supportdiv");
         const nav = document.querySelector("body");
         const backdrop = document.querySelector(".backdrop");
+
         sup.addEventListener("click", function () {
             document.querySelector(".backdrop").style.display = "block";
         })
         backdrop.addEventListener("click", function () {
+            document.querySelector(".backdrop").style.display = "none";
+        })
+        supportdiv.addEventListener("click", function () {
             document.querySelector(".backdrop").style.display = "none";
         })
         for (i = 0; i < 23; i++) {
