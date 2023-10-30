@@ -474,10 +474,11 @@
         </nav>
         <!-- end menu -->
         <!-- parallax -->
-        <div class="parallax position-absolute w-100 p-0 m-0 overflow-hidden">
-            <div class="row p-0 m-0 w-100 h-100">
-                <div class="col-12 p-0 h-100">
-                    <img class="img-fluid h-100" src="./images/apple.jpg" alt="">
+        <div class="parallax position-absolute top-0 w-100 p-0 m-0 overflow-hidden" style="top: 50px !important;">
+            <div class="row p-0 m-0 w-100  h-100">
+                <div class="col-12 p-0 h-100  "
+                    style="background-image: url(./images/apple.jpg); background-size: cover; background-repeat: no-repeat;background-position: center center;">
+
                 </div>
             </div>
         </div>
@@ -499,13 +500,13 @@
         const ulsup = document.querySelector("div.ulsupport");
         const supportdiv = document.querySelector("div.supportdiv");
         const nav = document.querySelector("body");
-        const backdrop = document.querySelector("div.allpage");
+        const backdrop = document.querySelector(".backdrop");
         sup.addEventListener("click", function () {
             document.querySelector(".backdrop").style.left = "0px";
         })
-        ulsup.onmouseout = function ()  {
-             document.querySelector(".backdrop").style.left = "100%"; 
-        }
+        backdrop.addEventListener("click", function () {
+            document.querySelector(".backdrop").style.left = "100%";
+        })
         for (i = 0; i < 23; i++) {
             navitem[i].onmouseover = function () {
                 document.querySelector(".backdrop").style.left = "0px";

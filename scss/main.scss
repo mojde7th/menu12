@@ -123,9 +123,6 @@ body {
 }
 div.parallax {
   height: 700px !important;
-  
-   img {
-    object-fit: cover;
-
-  }
+  z-index: -1;
+   
 }
