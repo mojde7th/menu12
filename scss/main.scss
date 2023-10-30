@@ -108,9 +108,7 @@ nav i {
   backdrop-filter: blur(15px);
   display: none;
 }
-body {
-  overflow: hidden !important;
-}
+
 .navbar {
   z-index: 4 !important;
   height: 50px !important;
@@ -123,5 +121,4 @@ body {
 }
 div.parallax {
   height: 700px !important;
- 
 }
