@@ -443,7 +443,7 @@
 
                 </div>
 
-                <div href="#" class="ulsupport ms-5 w-100  collapse position-absolute   h-100"
+                <div href="#" class="ulsupport ms-5 w-100  collapse d-lg-none  position-absolute   h-100"
                     id="navbarSupportedContent2" style="  ">
                     <ul class="list-unstyled d-flex gap-4  ">
                         <li class=""> <a style="line-height: 50px; font-size: 16px !important; z-index: 10;"
@@ -502,19 +502,19 @@
         const nav = document.querySelector("body");
         const backdrop = document.querySelector(".backdrop");
         sup.addEventListener("click", function () {
-            document.querySelector(".backdrop").style.left = "0px";
+            document.querySelector(".backdrop").style.display = "block";
         })
         backdrop.addEventListener("click", function () {
-            document.querySelector(".backdrop").style.left = "100%";
+            document.querySelector(".backdrop").style.display = "none";
         })
         for (i = 0; i < 23; i++) {
             navitem[i].onmouseover = function () {
-                document.querySelector(".backdrop").style.left = "0px";
+                document.querySelector(".backdrop").style.display = "block";
 
             }
             console.log(navitem[i]);
             navitem[i].onmouseout = function () {
-                document.querySelector(".backdrop").style.left = "100%";
+                document.querySelector(".backdrop").style.display = "none";
 
             }
         }
