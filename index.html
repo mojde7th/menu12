@@ -325,7 +325,7 @@
                             <div class="outerdiv   "></div>
                         </li>
 
-                        <li class="Entertainment nav-item">
+                        <li class="Entertainment nav-item d-none d-xl-block">
                             <a class="Entertainment nav-link" href="#">Entertainment</a>
                             <div class="Entertainment w-100    position-absolute    ">
 
@@ -476,8 +476,16 @@
         <!-- parallax -->
         <div class="parallax position-absolute w-100 p-0 m-0" style="top: 50px !important;">
             <div class="row p-0 m-0 w-100  h-100">
-                <div class="col p-0 h-100  "
-                    style="background-image: url(./images/gamewar4.jpg); background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                <div class="col-12 p-0 h-100  d-flex justify-content-center"
+                    style="background-image: url(./images/apple.jpg); background-size: cover; background-repeat: no-repeat;background-position: center center;">
+                    <div class="col-sm-12 col-12  col-xl-6 d-flex flex-column  text-justify position-absolute    text-white text-center justify-content-center"
+                        style="transform: translateY(50%) !important;">
+                        <h2 class="text-white text-capitalize text-center">iphone 14 Pro</h2>
+                        <div class="row col-10 offset-1 col-sm-8 offset-sm-2 ">
+                            <a href="" class="text-capitalize  col-4 offset-2 p-0">learn more ></a>
+                            <a class="text-capitalize col-4 p-0 " href="">buy ></a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -504,10 +512,14 @@
 
         sup.addEventListener("click", function () {
             document.querySelector(".backdrop").style.display = "block";
+            if(!sup.classList.contains('show')){
+                 document.querySelector(".backdrop").style.display = "none";
+            }
         })
         backdrop.addEventListener("click", function () {
             document.querySelector(".backdrop").style.display = "none";
         })
+       
         supportdiv.addEventListener("click", function () {
             document.querySelector(".backdrop").style.display = "none";
         })

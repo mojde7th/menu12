@@ -13,21 +13,63 @@ nav i {
 }
 @media screen and (min-width: 1400px) {
   // xxl
+  div.parallax {
+  height: 700px !important;
+  h2 {
+    font-size: 60px !important;
+  }
+  a{font-size: 20px;}
+}
 }
 @media screen and (min-width: 1200px) and(max-width:1400px) {
   //xl
+  div.parallax {
+  height: 700px !important;
+  h2 {
+    font-size: 60px !important;
+  }
+  a{font-size: 20px;}
+}
 }
 @media screen and (min-width: 992px) and(max-width:1200px) {
   //lg
+  div.parallax {
+  height: 700px !important;
+  h2 {
+    font-size: 60px !important;
+  }
+  a{font-size: 20px;}
+}
 }
 @media screen and (min-width: 768px) and(max-width:992px) {
   //md
+  div.parallax {
+  height: 600px !important;
+  h2 {
+    font-size: 55px !important;
+  }
+  a{font-size: 19px;}
+}
 }
 @media screen and (min-width: 576px) and(max-width:768px) {
   //sm
+  div.parallax {
+  height: 400px !important;
+  h2 {
+    font-size: 50px !important;
+  }
+  a{font-size: 17px;}
+}
 }
 @media screen and (max-width: 576px) {
   //xs
+    div.parallax {
+  height: 300px !important;
+  h2 {
+    font-size: 30px !important;
+  }
+  a{font-size: 14px;}
+}
 }
 
 @media screen and (min-width: 992px) {
@@ -119,6 +161,4 @@ nav i {
   top: calc(50px) !important;
   transform: translateX(-50%) !important;
 }
-div.parallax {
-  height: 700px !important;
-}
+
